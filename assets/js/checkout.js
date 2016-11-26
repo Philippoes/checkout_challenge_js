@@ -1,5 +1,10 @@
 function Checkout() {
-  // this.basket = yaml.safeLoad(fs.readFileSync('assets/yml/basket.yml', 'utf8'));
+  var tie = {
+      name: "Tie",
+      id: "001",
+      price: 9.25
+  };
+  this.items = [tie];
 }
 
 Checkout.prototype.scan = function(person, item) {
