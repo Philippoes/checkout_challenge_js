@@ -1,11 +1,7 @@
-function Checkout() {}
+function Checkout() {
+  // this.basket = yaml.safeLoad(fs.readFileSync('assets/yml/basket.yml', 'utf8'));
+}
 
-// self.basket = yaml file;
-// checkout.prototype.scan = function(item) {
-//   ;
-// };
-//
-// checkout.prototype.total = function (val_1, val_2) {
-//   var result = val_1 + val_2;
-//   return result
-// }
+Checkout.prototype.scan = function(person, item) {
+  person.basket.push(item);
+};
