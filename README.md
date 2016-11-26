@@ -1,3 +1,27 @@
+Userstories:
+The store should have a range of products that they can access through a yaml file. the objects should have numbers on them eg; 001 = tie ,price: $9.25 , 002 = sweater, price $45, 003 and so on.
+
+a person should be be able to search for an item, and add it to their basket.
+
+the store should be able to calculate the sum of the items purchased.
+
+you should be able to checkout and purchase the items.
+//
+
+Our marketing team want to offer promotions as an incentive for our customers to purchase these items.
+
+If you spend over $60, then you get 10% off of your purchase.
+If you buy 2 or more ties then the price drops to $8.50.
+
+Our check-out can scan items in any order, and because our promotions will change, it needs to be flexible regarding our promotional rules.
+
+The interface to our checkout looks like this:
+
+co = Checkout.new(promotional_rules)
+co.scan(item)
+co.scan(item)
+price = co.total
+//
 ## JS Test Boilerplate 0.1 (WIP)
 [![Build Status](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate.svg?branch=master)](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/CraftAcademy/karma-jquery-jasmine_boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CraftAcademy/karma-jquery-jasmine_boilerplate?branch=master)

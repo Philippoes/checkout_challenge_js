@@ -4,4 +4,4 @@ var onReadyEvents = function(){
     var text = $('#text').val();
     $('#display_message').html(text);
   });
-}
+};
