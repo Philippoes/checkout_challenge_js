@@ -1,12 +1,9 @@
 Userstories:
-The store should have a range of products that they can access through a yaml file. the objects should have numbers on them eg; 001 = tie ,price: $9.25 , 002 = sweater, price $45, 003 and so on.
+The store should have a range of products. the objects should have numbers on them eg; 001 = tie ,price: $9.25 , 002 = sweater, price $45, 003 and so on.
 
-a person should be be able to search for an item, and add it to their basket.
+a person should be able to add items it to their basket.
 
 the store should be able to calculate the sum of the items purchased.
-
-you should be able to checkout and purchase the items.
-//
 
 Our marketing team want to offer promotions as an incentive for our customers to purchase these items.
 
