@@ -34,5 +34,12 @@ describe("Should be able to", function(){
     co.scan(person, co.items[1]);
     expect(co.total(person)).toEqual(81);
   });
+
+  it("reduces the price 8.50 if there is more than 2 ties in the basket", function(){
+    co.scan(person, co.items[0]);
+    co.scan(person, co.items[0]);
+    co.scan(person, co.items[1]);
+    expect(co.total(person)).toEqual(55.8);
+  });
 });
 });
