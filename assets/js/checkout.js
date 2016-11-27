@@ -23,3 +23,12 @@ function Checkout() {
 Checkout.prototype.scan = function(person, item) {
   person.basket.push(item);
 };
+
+Checkout.prototype.total = function(person) {
+  var total = 0;
+  var a = person.basket;
+  a.forEach(function(entry) {
+      total += (entry.price);
+  });
+  return total;
+};

@@ -15,4 +15,15 @@ describe("Checkout", function() {
     co.scan(person, co.items[0]);
     expect(person.basket).toEqual([ Object({ name: 'Tie', id: '001', price: 9.25 }) ]);
   });
+
+describe("Should be able to", function(){
+
+  it("calculate the total sum of the persons basket", function(){
+    co = new Checkout();
+    person = new Person();
+    co.scan(person, co.items[0]);
+    co.scan(person, co.items[0]);
+    expect(co.total(person)).toEqual(18.5);
+  });
+});
 });
