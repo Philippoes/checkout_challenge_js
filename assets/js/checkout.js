@@ -27,11 +27,26 @@ Checkout.prototype.scan = function(person, item) {
 Checkout.prototype.total = function(person) {
   var total = 0;
   var a = person.basket;
+  var totalties = [];
+
   a.forEach(function(entry) {
-      total += (entry.price);
+    total += (entry.price);
   });
+
+  a.forEach(function(entry) {
+   if(entry.id === "001") {
+     totalties.push(entry);
+  }
+});
+
+  if (totalties.length >= 2){
+    total =  total - (0.75* totalties.length);
+  }
+
   if (total >= 60){
     total = total * 0.9;
   }
+
+  total = parseFloat(total.toFixed(2));
   return total;
 };
