@@ -30,5 +30,8 @@ Checkout.prototype.total = function(person) {
   a.forEach(function(entry) {
       total += (entry.price);
   });
+  if (total >= 60){
+    total = total * 0.9;
+  }
   return total;
 };

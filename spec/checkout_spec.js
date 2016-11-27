@@ -18,12 +18,21 @@ describe("Checkout", function() {
 
 describe("Should be able to", function(){
 
-  it("calculate the total sum of the persons basket", function(){
+  beforeEach(function() {
     co = new Checkout();
     person = new Person();
+  });
+
+  it("calculate the total sum of the persons basket", function(){
     co.scan(person, co.items[0]);
     co.scan(person, co.items[0]);
     expect(co.total(person)).toEqual(18.5);
+  });
+
+  it("drop the price 10% if the sum of the basket is above $60", function(){
+    co.scan(person, co.items[1]);
+    co.scan(person, co.items[1]);
+    expect(co.total(person)).toEqual(81);
   });
 });
 });
